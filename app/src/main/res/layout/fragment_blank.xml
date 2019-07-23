@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BlankFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <Button
+                android:text="0,0"
+                android:layout_column="0"/>
+            <Button
+                android:text="0,1"
+                android:layout_column="1"/>
+            <Button
+                android:text="0,2"
+                android:layout_column="2"/>
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:text="1,0"
+                android:layout_column="0"/>
+            <Button
+                android:text="1,1"
+                android:layout_column="1"
+                android:visibility="invisible"/>
+            <Button
+                android:text="1,2"
+                android:layout_column="2"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
