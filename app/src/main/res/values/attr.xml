@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="test" format="enum">
+            <enum name="a" value="0" />
+            <enum name="b" value="1" />
+            <enum name="c" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextViewLayout">
+        <attr name="test2" format="enum">
+            <enum name="d" value="0" />
+            <enum name="e" value="1" />
+            <enum name="f" value="2" />
+        </attr>
+        <attr name="textTop" format="string" />
+        <attr name="textBottom" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="DefaultStyleable">
+        <attr name="android:text" />
+        <attr name="android:src" />
+        <attr name="android:background" />
+        <attr name="android:progress" />
+    </declare-styleable>
+</resources>

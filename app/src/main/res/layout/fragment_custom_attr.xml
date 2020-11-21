@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".customattr.CustomAttrFragment">
+
+    <com.example.customviewapp.customattr.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/background_dark"
+        android:gravity="center"
+        android:text="aa"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        app:test="a" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <com.example.customviewapp.customattr.CustomTextViewLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <com.example.customviewapp.customattr.CustomTextViewLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:test2="e" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <com.example.customviewapp.customattr.CustomTextViewLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:test2="e"
+        app:textTop="aiueo"
+        app:textBottom="kakikukeko"/>
+
+</LinearLayout>
