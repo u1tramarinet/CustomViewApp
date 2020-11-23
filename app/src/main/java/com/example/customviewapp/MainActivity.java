@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.customviewapp.customattr.CustomAttrFragment;
+import com.example.customviewapp.mergetag.MergeTagFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
 //        addFragmentToActivity(BlankFragment.newInstance());
 //        addFragmentToActivity(ButtonFragment.newInstance());
-        addFragmentToActivity(CustomAttrFragment.newInstance());
+//        addFragmentToActivity(CustomAttrFragment.newInstance());
+        addFragmentToActivity(MergeTagFragment.newInstance());
     }
 
     private void addFragmentToActivity(@NonNull Fragment fragment) {

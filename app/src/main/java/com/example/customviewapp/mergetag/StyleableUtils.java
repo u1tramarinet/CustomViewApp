@@ -1,4 +1,4 @@
-package com.example.customviewapp.customattr;
+package com.example.customviewapp.mergetag;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.customviewapp.R;
+
+import java.util.StringJoiner;
 
 class StyleableUtils {
     private StyleableUtils() {
@@ -98,5 +100,17 @@ class StyleableUtils {
         boolean backgroundObtained;
         @IdRes
         int background;
+
+        @Override
+        public String toString() {
+            return new StringJoiner(", ", DefaultAttributes.class.getSimpleName() + "[", "]")
+                    .add("textObtained=" + textObtained)
+                    .add("text='" + text + "'")
+                    .add("srcObtained=" + srcObtained)
+                    .add("src=" + src)
+                    .add("backgroundObtained=" + backgroundObtained)
+                    .add("background=" + background)
+                    .toString();
+        }
     }
 }
